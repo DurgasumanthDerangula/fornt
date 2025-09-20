@@ -22,7 +22,7 @@ const ScoreChartPage = () => {
       console.log('📡 Fetching scores for userId:', userId);
 
       try {
-        const res = await axios.get(`https://healthback-1-rx2e.onrender.com/api/sco/${userId}`);
+        const res = await axios.get(`https://healthback-3.onrender.com/api/sco/${userId}`);
         console.log('✅ Raw API response:', res.data);
 
         const sorted = res.data.sort((a, b) => new Date(a.date) - new Date(b.date));
