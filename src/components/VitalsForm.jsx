@@ -96,7 +96,7 @@ const VitalsForm = ({ onTipUpdate }) => {
         date,
       };
 
-      await axios.post('https://healthback-rp2d.onrender.com/api/score/add', payload);
+      await axios.post('https://healthback-1-rx2e.onrender.com/api/score/add', payload);
       setMessage('Score calculated and saved successfully!');
     } catch (err) {
       console.error('Error during score submission:', err);
