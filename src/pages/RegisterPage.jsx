@@ -16,7 +16,7 @@ export default function Register() {
     e.preventDefault();
     setMessage('');
     try {
-      const res = await axios.post('http://localhost:5002/api/auth/register', formData);
+      const res = await axios.post('https://healthback-rp2d.onrender.com/api/auth/register', formData);
       setMessage(res.data.message || 'Registered successfully!');
     } catch (err) {
       setMessage2(err.response?.data?.error || 'Something went wrong');
