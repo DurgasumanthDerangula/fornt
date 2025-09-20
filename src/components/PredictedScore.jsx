@@ -19,7 +19,7 @@ const PredictedScore = ({ userId }) => {
     const trimmedId = userId.trim();
 
     axios
-      .get(`https://healthback-rp2d.onrender.com/predict-score?userId=${trimmedId}`)
+      .get(`https://mlback-4.onrender.com/predict-score?userId=${trimmedId}`)
       .then(res => {
         console.log('Prediction response:', res.data);
 
