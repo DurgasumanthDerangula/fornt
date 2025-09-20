@@ -18,7 +18,7 @@ export default function Login() {
     setMessage('');
 
     try {
-      const res = await axios.post('https://healthback-rp2d.onrender.com/api/auth/login', formData);
+      const res = await axios.post('https://healthback-1-rx2e.onrender.com/api/auth/login', formData);
       const { token, user } = res.data;
 
       localStorage.setItem('token', token);
